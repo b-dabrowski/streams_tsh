@@ -335,9 +335,11 @@ fs.createReadStream("./tmp.log.gz").pipe(zlib.createGunzip()).pipe(fs.createWrit
 
 ## exercise
 
-HTTP client should read books.import.txt, gzip it, send a POST request to the server and print response to stdout.
+HTTP client should read books.import.txt, gzip it, send a POST request
+to the server and print response to stdout.
 
-HTTP server should gunzip request, split it on new lines, filter out only books with javascript in the title
+HTTP server should gunzip request, split it on new lines, filter out only books
+with javascript in the title
 and return a newline delimited JSON of objects with title property.
 
 Expected output:
